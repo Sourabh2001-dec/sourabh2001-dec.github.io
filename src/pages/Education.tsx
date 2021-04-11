@@ -46,7 +46,7 @@ const Education = () => {
       <LottieWithBlob animationData={animationData} />
 
       <PartitionHeading text="Certifications" />
-      <div className="flex flex-row flex-wrap items-center justify-center px-5 md:px-28 py-5">
+      <div className="flex flex-row flex-wrap items-center justify-start px-5 md:px-28 py-5">
         <CourseCard
           providerImage={CourseraLogo}
           provider={"The Hong Kong University of Science and Technology"}
