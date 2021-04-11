@@ -1,0 +1,12 @@
+
+.magnifyBtn {
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .magnifyBtn:hover {
+    transform: scale(1.10);
+  }
+  
+  .magnifyBtn:active {
+    transform: scale(.9);
+  }

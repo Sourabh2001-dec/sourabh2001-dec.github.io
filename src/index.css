@@ -3,10 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   box-sizing: border-box;
 }
 
 .nav-link {
   @apply cursor-pointer py-2;
+}
+
+.body-1{
+  @apply text-sm md:text-base lg:text-lg;
+}
+
+.heading-2{
+  @apply text-base md:text-lg lg:text-xl;
 }

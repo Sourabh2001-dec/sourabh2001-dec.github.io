@@ -1,49 +1,21 @@
 import React from "react";
-import Lottie, { Options } from "react-lottie";
 import CourseCard from "../components/CourseCard";
 import EducationCard from "../components/EducationCard";
+import LottieWithBlob from "../components/LottieWithBlob";
 import PageHeading from "../components/PageHeading";
 import PartitionHeading from "../components/PartitionHeading";
-import BlobSvg from "../images/blob.svg";
 import CourseraLogo from "../images/coursera-logo.svg";
 import animationData from "../lotties/study.json";
 
-const LottieWithBlob = ({ animationData }: { animationData: any }) => {
-  const defaultOptions: Options = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid",
-    },
-  };
-  return (
-    <div className="relative mb-7">
-      <div className="relative z-2">
-        <img
-          src={BlobSvg}
-          className="w-3/4 md:w-4/12 lg:w-1/5 mx-auto"
-          alt=""
-        />
-      </div>
-      <div
-        className="absolute z-4  w-3/4 md:w-4/12 lg:w-1/5"
-        style={{
-          transform: "translateX(-50%) translateY(-115%)",
-          left: "50%",
-        }}
-      >
-        <Lottie options={defaultOptions} speed={1} />
-      </div>
-    </div>
-  );
-};
 
 const Education = () => {
   return (
     <div>
       <PageHeading heading="Education" />
-      <LottieWithBlob animationData={animationData} />
+      <LottieWithBlob animationData={animationData} style={{
+          transform: "translateX(-50%) translateY(-115%)",
+          left: "50%",
+        }} />
 
       <PartitionHeading text="Certifications" />
       <div className="flex flex-row flex-wrap items-center justify-start px-5 md:px-28 py-5">

@@ -2,10 +2,10 @@ import React from 'react'
 
 const PartitionHeading = ({text}:{text : string}) => {
     return (
-        <div>
+        <div className="mt-14 mb-10">
             <div className="flex space-x-2 items-center">
                 <span className="w-1/12 bg-primary h-0.5"></span>
-                <h2 className="text-1xl font-black uppercase tracking-widest text-secondary">{text}</h2>
+                <h2 className="text-xl font-black uppercase tracking-widest text-secondary">{text}</h2>
             </div>
         </div>
     )

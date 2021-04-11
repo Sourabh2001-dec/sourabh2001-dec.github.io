@@ -1,7 +1,3 @@
-import githubLine from "@iconify-icons/ri/github-line";
-import instagramLine from "@iconify-icons/ri/instagram-line";
-import linkedinBoxLine from "@iconify-icons/ri/linkedin-box-line";
-import { Icon } from "@iconify/react";
 import React from "react";
 import Lottie from "react-lottie";
 import { Link } from "react-router-dom";
@@ -21,23 +17,38 @@ const Home = () => {
   return (
     <>
       <div className="container mx-auto px-10 md:px-16 flex-grow flex flex-wrap-reverse items-end md:items-center">
-        <div className="w-full md:w-1/2 py-5 md:py-10 text-center md:text-left">
+        <div
+          className="w-full md:w-1/2 py-5 md:py-10 text-center md:text-left"
+          data-aos="fade-up"
+        >
           <h1 className="text-2xl md:text-4xl text-white">Hello! I am</h1>
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-primary">
             Sourabh Kumbhar
           </h1>
-          <p className="text-1xl md:text-2xl my-2  text-secondary">
+          <p className="text-xl md:text-2xl my-2  text-secondary">
             Full Stack Web Developer and App Developer
           </p>
           <div className="flex space-x-4 my-8 justify-center md:justify-start">
             <div className="transform transition-all hover:-translate-y-1 border-2 border-l2 hover:border-primary-700 cursor-pointer text-primary bg-l2 text-3xl md:text-5xl rounded-full p-3 md:p-5">
-              <Icon icon={instagramLine} />
+              <span
+                className="iconify"
+                data-icon="akar-icons:instagram-fill"
+                data-inline="false"
+              ></span>
             </div>
             <div className="transform transition-all hover:-translate-y-1 border-2 border-l2 hover:border-primary-700 cursor-pointer text-primary bg-l2 text-3xl md:text-5xl rounded-full p-3 md:p-5">
-              <Icon icon={linkedinBoxLine} />
+              <span
+                className="iconify"
+                data-icon="fa-brands:linkedin-in"
+                data-inline="false"
+              ></span>
             </div>
             <div className="transform transition-all hover:-translate-y-1 border-2 border-l2 hover:border-primary-700 cursor-pointer text-primary bg-l2 text-3xl md:text-5xl rounded-full p-3 md:p-5">
-              <Icon icon={githubLine} />
+              <span
+                className="iconify"
+                data-icon="codicon:github-inverted"
+                data-inline="false"
+              ></span>
             </div>
           </div>
           <div className="flex justify-center md:justify-start space-x-4">
@@ -55,11 +66,14 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="w-full md:w-1/2 h-auto -mt-14 md:-mt-44">
+        <div
+          className="w-full md:w-1/2 h-auto -mt-14 md:-mt-44"
+          data-aos="fade-up"
+        >
           <Lottie options={defaultOptions} style={{ width: "100%" }} />
         </div>
       </div>
-      <img src={WaveImage} alt="" className="w-screen h-full " />
+      <img src={WaveImage} alt="" className="w-screen h-full self-end" />
     </>
   );
 };

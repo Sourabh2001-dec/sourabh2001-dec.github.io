@@ -20,12 +20,12 @@ const EducationCard = ({ tags, time, data, name }: EducationCardProps) => {
         <div className="flex my-4 justify-between items-center">
           <div>
             <h1 className="my-2">{time}</h1>
-            {data.map((sentence) => (
-              <h1>{sentence}</h1>
+            {data.map((sentence,_) => (
+              <h1 key={_.toString()}>{sentence}</h1>
             ))}
           </div>
-          {tags.map((tag) => (
-            <h1 className="px-4 py-3 text-primary bg-l3 uppercase">{tag}</h1>
+          {tags.map((tag,_) => (
+            <h1 key={_.toString()} className="px-4 py-3 text-primary bg-l3 uppercase">{tag}</h1>
           ))}
         </div>
       </div>
