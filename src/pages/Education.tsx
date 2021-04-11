@@ -1,13 +1,15 @@
 import React from "react";
-import Lottie from "react-lottie";
+import Lottie, { Options } from "react-lottie";
+import CourseCard from "../components/CourseCard";
 import EducationCard from "../components/EducationCard";
 import PageHeading from "../components/PageHeading";
 import PartitionHeading from "../components/PartitionHeading";
 import BlobSvg from "../images/blob.svg";
+import CourseraLogo from "../images/coursera-logo.svg";
 import animationData from "../lotties/study.json";
 
 const LottieWithBlob = ({ animationData }: { animationData: any }) => {
-  const defaultOptions = {
+  const defaultOptions: Options = {
     loop: true,
     autoplay: true,
     animationData: animationData,
@@ -31,7 +33,7 @@ const LottieWithBlob = ({ animationData }: { animationData: any }) => {
           left: "50%",
         }}
       >
-        <Lottie options={defaultOptions} />
+        <Lottie options={defaultOptions} speed={1} />
       </div>
     </div>
   );
@@ -42,7 +44,19 @@ const Education = () => {
     <div>
       <PageHeading heading="Education" />
       <LottieWithBlob animationData={animationData} />
+
       <PartitionHeading text="Certifications" />
+      <div className="flex flex-row flex-wrap items-center justify-center px-5 md:px-28 py-5">
+        <CourseCard
+          providerImage={CourseraLogo}
+          provider={"The Hong Kong University of Science and Technology"}
+          courseName={"Full-Stack Web Development with React"}
+          link={"https://coursera.org/share/ac0024ae4ba3d0d27b9c3e62e4c75ed3"}
+          duration={"2020"}
+        />
+      </div>
+
+      <PartitionHeading text="Qualification" />
 
       <div className="flex flex-col items-center justify-center px-5 md:px-0">
         <EducationCard

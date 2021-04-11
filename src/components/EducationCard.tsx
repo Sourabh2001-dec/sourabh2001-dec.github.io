@@ -9,7 +9,7 @@ type EducationCardProps = {
 
 const EducationCard = ({ tags, time, data, name }: EducationCardProps) => {
   return (
-    <div className="bg-l2 mt-5 md:mr-2.5 rounded-md w-full md:w-10/12">
+    <div className="bg-l2 mt-5 md:mt-8 md:mr-2.5 rounded-md w-full md:w-10/12">
       <div className="bg-l3 w-full text-white p-4 text-sm md:text-base flex items-center">
         <div>
           <h1 className="uppercase tracking-wider ">{name}</h1>

@@ -65,7 +65,7 @@ const SkillCard = ({
               !!animationClasses ? animationClasses : `w-full md:w-3/4`
             }
           >
-            <Lottie options={defaultOptions} />
+            <Lottie options={defaultOptions} speed={2} />
           </div>
         </div>
       </div>
