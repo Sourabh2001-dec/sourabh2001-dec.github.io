@@ -44,8 +44,9 @@ const Home = () => {
             Full Stack Web Developer and App Developer
           </p>
           <div className="flex space-x-4 my-8 justify-center md:justify-start">
-            {socialLinks.map((link) => (
+            {socialLinks.map((link, _) => (
               <a
+                key={_.toString()}
                 href={link.link}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,13 +65,23 @@ const Home = () => {
               to="/about"
               className="text-secondary flex-row flex-nowrap items-center uppercase rounded-sm bg-l2 px-4 py-2 focus:ring-1 focus:ring-primary-800 hover:text-primary cursor-pointer body-1"
             >
-              Know More  <span className="iconify inline-block" data-icon="akar-icons:arrow-right" data-inline="false"></span>
+              Know More{" "}
+              <span
+                className="iconify inline-block"
+                data-icon="akar-icons:arrow-right"
+                data-inline="false"
+              ></span>
             </Link>
             <Link
               to="/about"
               className="text-secondary flex-row flex-nowrap items-center uppercase rounded-sm bg-l2 px-4 py-2 focus:ring-1 focus:ring-primary-800 hover:text-primary cursor-pointer body-1"
             >
-              <span className="iconify inline-block" data-icon="akar-icons:download" data-inline="false"></span> <span>Resume</span>
+              <span
+                className="iconify inline-block"
+                data-icon="akar-icons:download"
+                data-inline="false"
+              ></span>{" "}
+              <span>Resume</span>
             </Link>
           </div>
         </div>
@@ -81,7 +92,11 @@ const Home = () => {
           <Lottie options={defaultOptions} style={{ width: "100%" }} />
         </div>
       </div>
-      <img src={WaveImage} alt="" className="w-screen h-full self-end" />
+      <img
+        src={WaveImage}
+        alt=""
+        className="w-screen h-full self-end md:-mt-10"
+      />
     </>
   );
 };

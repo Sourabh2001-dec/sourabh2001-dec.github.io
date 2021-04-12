@@ -10,7 +10,7 @@ import animationData from "../lotties/study.json";
 
 const Education = () => {
   return (
-    <div>
+    <div className="mb-6">
       <PageHeading heading="Education" />
       <LottieWithBlob animationData={animationData} style={{
           transform: "translateX(-50%) translateY(-115%)",

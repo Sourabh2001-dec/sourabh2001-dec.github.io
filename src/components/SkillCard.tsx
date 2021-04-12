@@ -28,7 +28,7 @@ const SkillCard = ({
   };
 
   return (
-    <div className="bg-l2 text-white px-5 md:px-14 py-4 md:py-10 my-5 rounded-md">
+    <div className="bg-l2 text-white px-5 md:px-14 py-4 md:py-10 my-5 rounded-md" data-aos="fade-up">
       <div
         className={`flex flex-col  ${
           reverse ? "md:flex-row-reverse" : "md:flex-row"

@@ -17,7 +17,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   ...props
 }) => {
   return (
-    <div className={`w-auto mb-5 md:mb-0 bg-l2 rounded-md`} {...props}>
+    <div
+      className={`w-auto mb-5 md:mb-0 bg-l2 rounded-md overflow-hidden cursor-pointer    `}
+      {...props}
+    >
       <div className="w-full h-auto overflow-hidden">
         <img
           src={projectImage}
@@ -31,8 +34,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </h2>
       </div>
       <div className="flex space-x-0.5 text-2xl pl-2 flex-wrap">
-        {icons.map((icon,_) => (
-          <div key={_.toString()} className="hover:bg-l1  transform hover:scale-125  transition-all duration-150 cursor-pointer p-2 rounded-full">
+        {icons.map((icon, _) => (
+          <div
+            key={_.toString()}
+            className="hover:bg-l1  transform hover:scale-125  transition-all duration-150 cursor-pointer p-2 rounded-full"
+          >
             <span
               className="iconify"
               data-icon={icon}

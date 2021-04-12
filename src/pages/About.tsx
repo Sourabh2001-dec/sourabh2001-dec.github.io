@@ -8,7 +8,7 @@ import frontendAnimation from "../lotties/frontend-design.json";
 import programmingAnimation from "../lotties/programming.json";
 const About = () => {
   return (
-    <div>
+    <div className="mb-6">
       <PageHeading heading={"What I Do"} />
       <PartitionHeading text={"web development"} />
       <div className="px-5 md:px-36">

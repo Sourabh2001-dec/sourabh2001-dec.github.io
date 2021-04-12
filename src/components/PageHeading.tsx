@@ -6,7 +6,7 @@ type PageHeadingProps = {
 
 const PageHeading = ({ heading }: PageHeadingProps) => {
   return (
-    <div>
+    <div data-aos="fade-right" data-sod-delay="-500">
       <div className="bg-l2 text-lg  md:text-xl  lg:text-2xl md:w-1/4 text-white inline-block my-5 text-center px-9 py-4 rounded-tr-full rounded-br-full">
         {heading}
       </div>

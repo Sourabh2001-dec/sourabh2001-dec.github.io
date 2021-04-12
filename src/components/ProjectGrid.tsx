@@ -116,9 +116,14 @@ const projects: Project[] = [
     projectName: "Istriwala App",
     projectDescription:
       "This is mobile application made for laundry owners. The app features basic necessities like creating an order, filtering the orders over a range of days and many more.",
-    projectType: ["APP"],
+    projectType: ["APP", "FIREBASE"],
     projectImage: projectImages("./istriwala.png").default,
-    icons: [`vscode-icons:file-type-reactjs`,`vscode-icons:file-type-firebase`,`logos:redux`,`vscode-icons:file-type-expo`],
+    icons: [
+      `vscode-icons:file-type-reactjs`,
+      `vscode-icons:file-type-firebase`,
+      `logos:redux`,
+      `vscode-icons:file-type-expo`,
+    ],
     projectLink: "https://expo.io/@istriwala/projects/Istriwala",
   },
 ];
@@ -137,6 +142,8 @@ const ProjectGrid = () => {
                 type === project ? "bg-primary text-l1" : "bg-l2 text-secondary"
               } px-3 py-2 text-sm uppercase`}
               onClick={() => setType(project)}
+              data-aos="fade-up"
+              data-aos-delay={`${(_ + 1) * 50}`}
             >
               {project}
             </button>
@@ -153,7 +160,7 @@ const ProjectGrid = () => {
               projectLink={project.projectLink}
               projectName={project.projectName}
               icons={project.icons}
-              data-aos="fade-right"
+              data-aos="fade-up"
             />
           ) : null
         )}

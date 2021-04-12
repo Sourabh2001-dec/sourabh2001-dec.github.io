@@ -18,7 +18,7 @@ const LottieWithBlob = ({
     },
   };
   return (
-    <div className="relative mb-7">
+    <div className="relative mb-7" data-aos="fade-up">
       <div className="relative z-2">
         <img
           src={BlobSvg}

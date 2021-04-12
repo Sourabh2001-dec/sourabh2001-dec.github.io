@@ -16,7 +16,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
   providerImage,
 }) => {
   return (
-    <div className="bg-l2 flex flex-wrap sm:flex-nowrap rounded-md overflow-hidden text-white my-3 sm:mx-3 w-auto max-w-0.5 shadow-xl">
+    <div className="bg-l2 flex flex-wrap sm:flex-nowrap rounded-md overflow-hidden text-white my-3 sm:mx-3 w-auto max-w-0.5 shadow-xl" data-aos="fade-up">
       <img
         src={providerImage}
         alt=""
@@ -31,6 +31,8 @@ const CourseCard: React.FC<CourseCardProps> = ({
           <h2 className="text-xs md:text-base">{duration}</h2>
           <a
             href={!!link ? link : "/"}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-primary hover:underline text-xs md:text-base cursor-pointer"
           >
             Verify
