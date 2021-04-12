@@ -33,7 +33,7 @@ const Contact = () => {
           left: "50%",
         }}
       />
-      <div className="flex justify-center" data-aos="fade-up">
+      <div className="flex justify-center" data-aos="fade-up" data-aos-offset="-200">
         <div className="w-auto mx-4 p-4 bg-l2 text-secondary">
           <p>
             Feel free to email or DM me. I can help you with web development and
@@ -47,7 +47,7 @@ const Contact = () => {
             href={contact.link}
             target="_blank"
             rel="noopener noreferrer"
-            data-aos="fade-up"
+            data-aos="fade-right"
             data-aos-delay={`${(index + 1) * 100}`}
             className="border-2 border-l2 hover:border-primary-900 text-2xl mx-2.5 bg-l2 rounded-full p-4"
           >

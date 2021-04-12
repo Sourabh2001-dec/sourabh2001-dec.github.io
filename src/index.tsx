@@ -8,7 +8,9 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 AOS.init({
-  duration: 1000,
+  duration: 600,
+  offset : -150,
+  once : true,
 });
 
 ReactDOM.render(

@@ -5,6 +5,7 @@
 
 html{
   scroll-behavior: smooth;
+  @apply bg-l1;
 }
 
 body{
