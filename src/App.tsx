@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import RouteChangeTracker from "./components/RouteChangeTracker";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
@@ -14,6 +15,7 @@ function App() {
       className="min-h-screen flex flex-col
     transition-all bg-l1"
     >
+      <RouteChangeTracker />
       <Navbar />
       <div className="bg-l1 flex-grow flex flex-col">
         <Switch>
