@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.ccf2a83f.chunk.css",
-    "main.js": "/static/js/main.2370d606.chunk.js",
-    "main.js.map": "/static/js/main.2370d606.chunk.js.map",
+    "main.css": "/static/css/main.5d95d2d3.chunk.css",
+    "main.js": "/static/js/main.db5678f3.chunk.js",
+    "main.js.map": "/static/js/main.db5678f3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.96f3e135.js",
     "runtime-main.js.map": "/static/js/runtime-main.96f3e135.js.map",
     "static/css/2.cb8ac254.chunk.css": "/static/css/2.cb8ac254.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.7129cd26.chunk.js.map": "/static/js/3.7129cd26.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.cb8ac254.chunk.css.map": "/static/css/2.cb8ac254.chunk.css.map",
-    "static/css/main.ccf2a83f.chunk.css.map": "/static/css/main.ccf2a83f.chunk.css.map",
+    "static/css/main.5d95d2d3.chunk.css.map": "/static/css/main.5d95d2d3.chunk.css.map",
     "static/js/2.f6857635.chunk.js.LICENSE.txt": "/static/js/2.f6857635.chunk.js.LICENSE.txt",
     "static/media/blob.340c090c.svg": "/static/media/blob.340c090c.svg",
     "static/media/coursera-logo.a4d8894d.svg": "/static/media/coursera-logo.a4d8894d.svg",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.96f3e135.js",
     "static/css/2.cb8ac254.chunk.css",
     "static/js/2.f6857635.chunk.js",
-    "static/css/main.ccf2a83f.chunk.css",
-    "static/js/main.2370d606.chunk.js"
+    "static/css/main.5d95d2d3.chunk.css",
+    "static/js/main.db5678f3.chunk.js"
   ]
 }
