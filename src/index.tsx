@@ -1,18 +1,21 @@
 import AOS from "aos";
-import "../node_modules/aos/dist/aos.css"
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import "../node_modules/aos/dist/aos.css";
 import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 AOS.init({
-  duration : 1000
+  duration: 1000,
 });
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );

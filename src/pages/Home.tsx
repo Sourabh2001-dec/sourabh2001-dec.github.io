@@ -4,6 +4,21 @@ import { Link } from "react-router-dom";
 import WaveImage from "../images/wave.png";
 import animationData from "../lotties/coder.json";
 
+const socialLinks = [
+  {
+    icon: "akar-icons:instagram-fill",
+    link: "https://www.instagram.com/sourabh_7028/",
+  },
+  {
+    icon: "fa-brands:linkedin-in",
+    link: "https://www.linkedin.com/in/sourabh-kumbhar-aa84031a3",
+  },
+  {
+    icon: "codicon:github-inverted",
+    link: "https://github.com/Sourabh2001-dec",
+  },
+];
+
 const Home = () => {
   const defaultOptions = {
     loop: true,
@@ -29,40 +44,33 @@ const Home = () => {
             Full Stack Web Developer and App Developer
           </p>
           <div className="flex space-x-4 my-8 justify-center md:justify-start">
-            <div className="transform transition-all hover:-translate-y-1 border-2 border-l2 hover:border-primary-700 cursor-pointer text-primary bg-l2 text-3xl md:text-5xl rounded-full p-3 md:p-5">
-              <span
-                className="iconify"
-                data-icon="akar-icons:instagram-fill"
-                data-inline="false"
-              ></span>
-            </div>
-            <div className="transform transition-all hover:-translate-y-1 border-2 border-l2 hover:border-primary-700 cursor-pointer text-primary bg-l2 text-3xl md:text-5xl rounded-full p-3 md:p-5">
-              <span
-                className="iconify"
-                data-icon="fa-brands:linkedin-in"
-                data-inline="false"
-              ></span>
-            </div>
-            <div className="transform transition-all hover:-translate-y-1 border-2 border-l2 hover:border-primary-700 cursor-pointer text-primary bg-l2 text-3xl md:text-5xl rounded-full p-3 md:p-5">
-              <span
-                className="iconify"
-                data-icon="codicon:github-inverted"
-                data-inline="false"
-              ></span>
-            </div>
+            {socialLinks.map((link) => (
+              <a
+                href={link.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform transition-all hover:-translate-y-1 border-2 border-l2 hover:border-primary-700 cursor-pointer text-primary bg-l2 text-3xl md:text-5xl rounded-full p-3 md:p-5"
+              >
+                <span
+                  className="iconify"
+                  data-icon={link.icon}
+                  data-inline="false"
+                ></span>
+              </a>
+            ))}
           </div>
           <div className="flex justify-center md:justify-start space-x-4">
             <Link
               to="/about"
-              className="text-secondary font-sans uppercase rounded-sm bg-l2 px-4 py-2  "
+              className="text-secondary flex-row flex-nowrap items-center uppercase rounded-sm bg-l2 px-4 py-2 focus:ring-1 focus:ring-primary-800 hover:text-primary cursor-pointer body-1"
             >
-              Know More
+              Know More  <span className="iconify inline-block" data-icon="akar-icons:arrow-right" data-inline="false"></span>
             </Link>
             <Link
               to="/about"
-              className="text-secondary uppercase rounded-sm bg-l2 px-4 py-2 "
+              className="text-secondary flex-row flex-nowrap items-center uppercase rounded-sm bg-l2 px-4 py-2 focus:ring-1 focus:ring-primary-800 hover:text-primary cursor-pointer body-1"
             >
-              Resume
+              <span className="iconify inline-block" data-icon="akar-icons:download" data-inline="false"></span> <span>Resume</span>
             </Link>
           </div>
         </div>

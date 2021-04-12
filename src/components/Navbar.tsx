@@ -1,9 +1,34 @@
 import React, { MutableRefObject, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
+
+const navLinks = [
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "About",
+    path: "/about",
+  },
+  {
+    title: "Projects",
+    path: "/projects",
+  },
+  {
+    title: "Education",
+    path: "/education",
+  },
+  {
+    title: "Contact",
+    path: "/contact",
+  },
+];
 
 const Navbar = () => {
   const ListRef = useRef() as MutableRefObject<HTMLUListElement>;
+
+  const location = useLocation();
 
   const handleNavbarToggle = () => {
     if (ListRef.current) {
@@ -38,26 +63,17 @@ const Navbar = () => {
         className={`md:flex md:flex-row text-secondary md:space-x-10 navbar navbar--close
          overflow-hidden md:overflow-visible`}
       >
-        <div className="block md:inline-block my-7 md:my-0">
-          <Link onClick={handleNavbarToggle} to="/about" className="borderLeftRight nav-link">
-            About
-          </Link>
-        </div>
-        <div className="block md:inline-block my-7 md:my-0">
-          <Link onClick={handleNavbarToggle} to="/projects" className="borderLeftRight nav-link">
-            Projects
-          </Link>
-        </div>
-        <div className="block md:inline-block my-7 md:my-0">
-          <Link onClick={handleNavbarToggle} to="/education" className="borderLeftRight nav-link">
-            Education
-          </Link>
-        </div>
-        <div className="block md:inline-block my-7 md:my-0">
-          <Link onClick={handleNavbarToggle} to="/contact" className="borderLeftRight nav-link">
-            Contact
-          </Link>
-        </div>
+        {navLinks.map((link,_) => (
+          <div className="block md:inline-block my-7 md:my-0" key={_.toString()}>
+            <Link
+              onClick={handleNavbarToggle}
+              to={link.path}
+              className={`borderLeftRight nav-link ${location.pathname === link.path && "text-primary"}`}
+            >
+              {link.title}
+            </Link>
+          </div>
+        ))}
       </ul>
       {/* </div> */}
     </div>

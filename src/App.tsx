@@ -13,7 +13,7 @@ function App() {
       className="min-h-screen flex flex-col
     transition-all bg-l1"
     >
-      <Router>
+      
         <Navbar />
         <div className="bg-l1 flex-grow flex flex-col">
           <Switch>
@@ -34,7 +34,7 @@ function App() {
             </Route>
           </Switch>
         </div>
-      </Router>
+   
     </div>
   );
 }

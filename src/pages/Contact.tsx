@@ -42,8 +42,9 @@ const Contact = () => {
         </div>
       </div>
       <div className="w-auto flex flex-wrap justify-center text-primary mt-5">
-        {contactData.map((contact) => (
+        {contactData.map((contact,_) => (
           <a
+          key={_.toString()}
             href={contact.link}
             className="border-2 border-l2 hover:border-primary-900 text-2xl mx-2.5 bg-l2 rounded-full p-4"
           >
