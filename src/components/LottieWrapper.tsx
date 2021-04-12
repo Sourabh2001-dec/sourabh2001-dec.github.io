@@ -1,7 +1,13 @@
 import React from "react";
 import Lottie, { Options } from "react-lottie";
 
-const LottieWrapper = ({ animationData }: { animationData: any }) => {
+const LottieWrapper = ({
+  animationData,
+  speed = 1,
+}: {
+  animationData: any;
+  speed?: number;
+}) => {
   const defaultOptions: Options = {
     loop: true,
     autoplay: true,
@@ -11,7 +17,7 @@ const LottieWrapper = ({ animationData }: { animationData: any }) => {
     },
   };
 
-  return <Lottie options={defaultOptions} speed={1} />;
+  return <Lottie options={defaultOptions} speed={speed} />;
 };
 
 export default LottieWrapper;

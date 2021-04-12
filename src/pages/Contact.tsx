@@ -29,11 +29,15 @@ const Contact = () => {
       <LottieWithBlob
         animationData={animationData}
         style={{
-          transform: "translateX(-50%) translateY(-100%)",
+          transform: "translate3d(-50%,-100%,0)",
           left: "50%",
         }}
       />
-      <div className="flex justify-center" data-aos="fade-up" data-aos-offset="-200">
+      <div
+        className="flex justify-center"
+        data-aos="fade-up"
+        data-aos-offset="-200"
+      >
         <div className="w-auto mx-4 p-4 bg-l2 text-secondary">
           <p>
             Feel free to email or DM me. I can help you with web development and
@@ -59,7 +63,11 @@ const Contact = () => {
           </a>
         ))}
       </div>
-      <div className="w-auto flex justify-center mt-5 p-3" data-aos="fade-up" data-aos-delay={`${contactData.length*100}`}>
+      <div
+        className="w-auto flex justify-center mt-5 p-3"
+        data-aos="fade-up"
+        data-aos-delay={`${contactData.length * 100}`}
+      >
         <span
           className="iconify text-primary text-xl mr-3"
           data-icon="mdi:google-maps"

@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div
-      className={`w-auto mb-5 md:mb-0 bg-l2 rounded-md overflow-hidden cursor-pointer    `}
+      className={`w-auto mb-5 md:mb-0 bg-l2 rounded-md overflow-hidden cursor-pointer flex flex-col   `}
       {...props}
     >
       <div className="w-full h-auto overflow-hidden">
@@ -47,9 +47,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         ))}
       </div>
-      <div className="w-full pb-4 px-4">
-        <p>{projectDescription}</p>
-        <div className="flex justify-end">
+      <div className="w-full pb-4 px-4 flex flex-col justify-between flex-grow">
+        <p className="block">{projectDescription}</p>
+        <div className="flex justify-end ">
           <a
             href={projectLink}
             target="_blank"

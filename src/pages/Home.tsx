@@ -1,6 +1,6 @@
 import React from "react";
-import Lottie from "react-lottie";
 import { Link } from "react-router-dom";
+import LottieWrapper from "../components/LottieWrapper";
 import WaveImage from "../images/wave.png";
 import animationData from "../lotties/coder.json";
 
@@ -89,7 +89,7 @@ const Home = () => {
           className="w-full md:w-1/2 h-auto -mt-14 md:-mt-44"
           data-aos="fade-up"
         >
-          <Lottie options={defaultOptions} style={{ width: "100%" }} />
+          <LottieWrapper animationData={animationData} />
         </div>
       </div>
       <img

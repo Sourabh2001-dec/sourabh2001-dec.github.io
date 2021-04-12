@@ -1,6 +1,6 @@
 import React from "react";
-import Lottie, { Options } from "react-lottie";
 import BlobSvg from "../images/blob.svg";
+import LottieWrapper from "./LottieWrapper";
 
 const LottieWithBlob = ({
   animationData,
@@ -9,14 +9,14 @@ const LottieWithBlob = ({
   animationData: any;
   style?: any;
 }) => {
-  const defaultOptions: Options = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid",
-    },
-  };
+  // const defaultOptions: Options = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid",
+  //   },
+  // };
   return (
     <div className="relative mb-7" data-aos="fade-up">
       <div className="relative z-2">
@@ -27,7 +27,7 @@ const LottieWithBlob = ({
         />
       </div>
       <div className="absolute z-4  w-3/4 md:w-4/12 lg:w-1/5" style={style}>
-        <Lottie options={defaultOptions} speed={1} />
+        <LottieWrapper animationData={animationData} />
       </div>
     </div>
   );

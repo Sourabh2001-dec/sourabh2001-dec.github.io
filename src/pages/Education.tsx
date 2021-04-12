@@ -7,15 +7,17 @@ import PartitionHeading from "../components/PartitionHeading";
 import CourseraLogo from "../images/coursera-logo.svg";
 import animationData from "../lotties/study.json";
 
-
 const Education = () => {
   return (
     <div className="mb-6">
       <PageHeading heading="Education" />
-      <LottieWithBlob animationData={animationData} style={{
-          transform: "translateX(-50%) translateY(-115%)",
+      <LottieWithBlob
+        animationData={animationData}
+        style={{
+          transform: "translate3d(-50%,-115%,0)",
           left: "50%",
-        }} />
+        }}
+      />
 
       <PartitionHeading text="Certifications" />
       <div className="flex flex-row flex-wrap items-center justify-start px-5 md:px-28 py-5">
