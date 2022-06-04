@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="z-50 bg-l2 md:bg-l1  py-5 md:py-4 px-6 md:px-10 flex justify-between items-center flex-row flex-wrap"
+      className="sticky top-0 z-50 bg-l2 md:bg-l1  py-5 md:py-4 px-6 md:px-10 flex justify-between items-center flex-row flex-wrap"
       data-aos="fade-down" data-aos-delay="-500"
     >
       <div className="w-full md:w-auto inline-flex justify-between items-center">
